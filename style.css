@@ -1,3 +1,6 @@
+h1 {
+    text-align: center;
+}
 body {
     background-color: cornflowerblue;
 }
@@ -6,6 +9,10 @@ h1 {
 }
 p {
     color: lightgray;
+}
+
+.p_below_h1 {
+    text-align: center;
 }
 .points_map {
     width: 100%;
