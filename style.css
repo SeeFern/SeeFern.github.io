@@ -15,7 +15,7 @@ p {
     text-align: center;
 }
 .points_map {
-    width: 100%;
-    height: 1080px;
+    width: 80%;
+    height: 720;
     border: none;
 }
