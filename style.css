@@ -14,11 +14,8 @@ p {
 .p-below-h1 {
     text-align: center;
 }
-.map-container {
+.points-map {
     width: 80%;
-    text-align: center;
-}
-.map-container iframe {
-    margin: 0 auto;
-    display: block;
+    height: 1080px;
+    border: none;
 }
