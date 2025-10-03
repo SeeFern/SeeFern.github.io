@@ -7,3 +7,8 @@ h1 {
 p {
     color: lightgray;
 }
+.points_map {
+    width: 100%;
+    height: 1080px;
+    border: none;
+}
