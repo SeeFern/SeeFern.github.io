@@ -9,7 +9,7 @@ var map = new ol.Map({
 });
 
 //initial view - epsg:3857 coordinates if not "Match project CRS"
-map.getView().fit([-15536234.097906, -326849.962121, -6400043.467491, 10103704.382262], map.getSize());
+map.getView().fit([-13908798.638028, 1797611.643997, -7968691.138028, 7018343.518997], map.getSize());
 
 ////small screen definition
     var hasTouchScreen = map.getViewport().classList.contains('ol-touch');
@@ -244,7 +244,7 @@ function onPointerMove(evt) {
                     highlightStyle = new ol.style.Style({
                         image: new ol.style.Circle({
                             fill: new ol.style.Fill({
-                                color: "#84ff00"
+                                color: "#ff5100"
                             }),
                             radius: radius
                         })
@@ -255,7 +255,7 @@ function onPointerMove(evt) {
 
                     highlightStyle = new ol.style.Style({
                         stroke: new ol.style.Stroke({
-                            color: '#84ff00',
+                            color: '#ff5100',
                             lineDash: null,
                             width: featureWidth
                         })
@@ -264,7 +264,7 @@ function onPointerMove(evt) {
                 } else {
                     highlightStyle = new ol.style.Style({
                         fill: new ol.style.Fill({
-                            color: '#84ff00'
+                            color: '#ff5100'
                         })
                     })
                 }
@@ -455,7 +455,7 @@ var Abstract = new ol.control.Control({
 
         var linkElement = document.createElement('a');
 
-        if (141 > 240) {
+        if (50 > 240) {
             linkElement.setAttribute("onmouseenter", "showAbstract()");
             linkElement.setAttribute("onmouseleave", "hideAbstract()");
             linkElement.innerHTML = 'i';
@@ -469,13 +469,13 @@ var Abstract = new ol.control.Control({
             window.showAbstract = function() {
                 linkElement.classList.remove("project-abstract");
                 linkElement.classList.add("project-abstract-uncollapsed");
-                linkElement.innerHTML = 'An interactive map which marks places that are important to me. If you click on a point, you will get more information relative to the label.';
+                linkElement.innerHTML = 'Points represent places that are meaningful to me.';
             }
 
             hideAbstract();
         } else {
             linkElement.classList.add("project-abstract-uncollapsed");
-            linkElement.innerHTML = 'An interactive map which marks places that are important to me. If you click on a point, you will get more information relative to the label.';
+            linkElement.innerHTML = 'Points represent places that are meaningful to me.';
         }
 
         titleElement.appendChild(linkElement);
